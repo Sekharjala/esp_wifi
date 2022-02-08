@@ -5,8 +5,8 @@
 
 //    Can be client or even host   //
 #ifndef STASSID
-#define STASSID "LAVAZ6"  // Add your network credentials
-#define STAPSK  "12345678"
+#define STASSID "........"  // Add your network credentials
+#define STAPSK  "........"
 #endif
 int LED= 22;
 const char* ssid = STASSID;
@@ -14,12 +14,12 @@ const char* password = STAPSK;
 void sevenseg(int a,int b,int c,int d,int e,int f,int g)
 {
   digitalWrite(2, a); 
-  digitalWrite(3, b); 
+  digitalWrite(0, b); 
   digitalWrite(4, c); 
-  digitalWrite(5, d); 
-  digitalWrite(6, e); 
-  digitalWrite(7, f);     
-  digitalWrite(8, g); 
+  digitalWrite(16, d); 
+  digitalWrite(17, e); 
+  digitalWrite(5, f);     
+  digitalWrite(18, g); 
 }
 
 void OTAsetup() {
